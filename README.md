@@ -57,7 +57,7 @@ F543210(A)
 |Product|324|120|35|24|15|8|3|0|10
 
 4. Sum: 324+120+35+24+15+8+3+0+10 = 539
-5. Remainder: 143 mod 11 = 0
+5. Remainder: 539 mod 11 = 0
 6. `F543210(A)` is a valid HKID number.
 
 ## Source Code

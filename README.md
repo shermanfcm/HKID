@@ -4,9 +4,9 @@
 N999999(A)
 ```
 where
-`N` is 1 or 2 capital letter between `A` and `Z`
-`9` is 1 numerical digit between `0` and `9`
-`A` is 1 check digit, a number between `0` and `9` or the capital letter `A`
+- `N` is 1 or 2 capital letter between `A` and `Z`
+- `9` is 1 numerical digit between `0` and `9`
+- `A` is 1 check digit, a number between `0` and `9` or the capital letter `A`
 
 ## Regular Expression
 ```
@@ -26,45 +26,21 @@ Omitting parentheses:
 5. HKID number is valid if and only if the remainder of the division is `0`.
 
 ## Character Conversion Table
-|Character|Value|
-|--|--|
-|0|0|
-|1|1|
-|2|2|
-|3|3|
-|4|4|
-|5|5|
-|6|6|
-|7|7|
-|8|8|
-|9|9|
-|A|10|
-|B|11|
-|C|12|
-|D|13|
-|E|14|
-|F|15|
-|G|16|
-|H|17|
-|I|18|
-|J|19|
-|K|20|
-|L|21|
-|M|22|
-|N|23|
-|O|24|
-|P|25|
-|Q|26|
-|R|27|
-|S|28|
-|T|29|
-|U|30|
-|V|31|
-|W|32|
-|X|33|
-|Y|34|
-|Z|35|
-|[empty]|36|
+|Character|Value|Character|Value|Character|Value|
+|--|--|--|--|--|--|
+|0|0|D|13|Q|26|
+|1|1|E|14|R|27|
+|2|2|F|15|S|28|
+|3|3|G|16|T|29|
+|4|4|H|17|U|30|
+|5|5|I|18|V|31|
+|6|6|J|19|W|32|
+|7|7|K|20|X|33|
+|8|8|L|21|Y|34|
+|9|9|M|22|Z|35|
+|A|10|N|23|[empty]|36|
+|B|11|O|24|
+|C|12|P|25|
 
 ## Example
 ```

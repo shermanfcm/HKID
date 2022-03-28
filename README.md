@@ -61,33 +61,7 @@ F543210(A)
 6. `F543210(A)` is a valid HKID number.
 
 ## Source Code
-Original source code from [CuMask+](https://www.qmask.gov.hk) registration website [[1]](#ref1):
-```javascript
-S = function(e, a) {
-  var t = !0;
-  if ("" !== e && "" !== a) {
-    var n = e.toUpperCase().match(/^([A-Z]{1,2})([0-9]{6})$/);
-    if (null === n)
-      t = !1;
-    else {
-      var r = n[1],
-          o = n[2],
-          i = "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
-          l = 0;
-      2 === r.length ? (l += 9 * (10 + i.indexOf(r.charAt(0))), l += 8 * (10 + i.indexOf(r.charAt(1)))) : (l += 324, l += 8 * (10 + i.indexOf(r)));
-      for (var s = 0, c = 7; s < o.length; s += 1, c -= 1)
-        l += c * o.charAt(s);
-      var m = l % 11,
-          u = 0 === m ? 0 : 11 - m;
-      t = u.toString() === a || 10 === u && "A" === a
-    }
-  }
-  return t
-};
-```
-
-
-Original source code from [COVID-19 Universal Community Testing Programme](https://www.communitytest.gov.hk) registration website [[2]](#ref2):
+Original source code from [COVID-19 Universal Community Testing Programme](https://www.communitytest.gov.hk) booking system [[1]](#ref1) and [COVID-19 Vaccination Programme](https://www.covidvaccine.gov.hk) booking system [[2]](#ref2):
 ```javascript
 function IsHKID(str) {
   var strValidChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -125,6 +99,6 @@ function IsHKID(str) {
 ```
 
 ## References
-<a id="ref1"></a> [1] Office of the Government Chief Information Officer, the Government of the Hong Kong Special Administrative Region (13 May 2020), [CuMask+ Registration](https://www.qmask.gov.hk/reginfo/static/js/main.fb5c0196.chunk.js), retrieved 17 May 2020, [archived](https://web.archive.org/web/20200517044214/https://www.qmask.gov.hk/reginfo/static/js/main.fb5c0196.chunk.js) on 17 May 2020.
+<a id="ref1"></a> [1] Hong Kong Special Administrative Region Government (29 Aug 2020), [COVID-19 Universal Community Testing Programme Booking System](https://booking.communitytest.gov.hk/form/assets/js/application_mo.js), retrieved 30 Aug 2020, [archived](https://web.archive.org/web/20200830081912/https://booking.communitytest.gov.hk/form/assets/js/application_mo.js) on 30 Aug 2020.
 
-<a id="ref2"></a> [2] Hong Kong Special Administrative Region Government (29 Aug 2020), [COVID-19 Universal Community Testing Programme Booking System](https://booking.communitytest.gov.hk/form/assets/js/application_mo.js), retrieved 30 Aug 2020, [archived](https://web.archive.org/web/20200830081912/https://booking.communitytest.gov.hk/form/assets/js/application_mo.js) on 30 Aug 2020.
+<a id="ref2"></a> [2] Hong Kong Special Administrative Region Government (18 Mar 2022), [COVID-19 Vaccination Programme Booking System](https://booking.covidvaccine.gov.hk/forms/assets/js/application_mo.js), retrieved 28 Mar 2022, [archived](https://web.archive.org/web/20220328132257/https://booking.covidvaccine.gov.hk/forms/assets/js/application_mo.js) on 28 Mar 2022.
